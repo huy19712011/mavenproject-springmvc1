@@ -15,5 +15,7 @@
     <body>
         <h1>Hello World of Spring MVC</h1>
         Student name: ${param.studentName}
+        <br>
+        The message: ${message}
     </body>
 </html>
