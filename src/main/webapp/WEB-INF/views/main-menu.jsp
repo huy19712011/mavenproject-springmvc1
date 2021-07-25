@@ -21,6 +21,8 @@
         <hr>
         <a href="hello/showForm">Hello World Form</a>
         <hr>
+        <a href="student/showForm">Student Form</a>
+        <hr>
         <img src="${pageContext.request.contextPath}/resources/images/spring-logo.png" />
         <img src="/resources/images/spring-logo.png" />
          <!--JSTL 1.2 (2011 version)=>no need <mvc:resources mapping="/resources/**"...-->  
