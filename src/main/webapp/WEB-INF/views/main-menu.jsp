@@ -11,7 +11,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Spring MVC basics</title>
         <link rel="stylesheet" type="text/css" 
 		  href="${pageContext.request.contextPath}/resources/css/my-test.css">
         <script src="${pageContext.request.contextPath}/resources/js/simple-test.js"></script>
