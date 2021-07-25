@@ -1,10 +1,11 @@
 <%-- 
-    Document   : main-menu
-    Created on : Jul 25, 2021, 8:43:32 AM
+    Document   : helloworld
+    Created on : Jul 25, 2021, 9:33:30 AM
     Author     : huynq
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ page isELIgnored="false" %>
 <!DOCTYPE html>
 <html>
     <head>
@@ -12,8 +13,7 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Spring MVC home page</h1>
-        <hr>
-        <a href="showForm">Hello World Form</a>
+        <h1>Hello World of Spring MVC</h1>
+        Student name: ${param.studentName}
     </body>
 </html>
