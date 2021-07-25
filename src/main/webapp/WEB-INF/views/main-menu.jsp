@@ -19,7 +19,7 @@
     <body>
         <h1>Spring MVC home page</h1>
         <hr>
-        <a href="showForm">Hello World Form</a>
+        <a href="hello/showForm">Hello World Form</a>
         <hr>
         <img src="${pageContext.request.contextPath}/resources/images/spring-logo.png" />
         <img src="/resources/images/spring-logo.png" />

@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.RequestParam;
  * @author huynq
  */
 @Controller
+@RequestMapping("/hello")
 public class HelloWorldController {
 
     // show initial HTML form
