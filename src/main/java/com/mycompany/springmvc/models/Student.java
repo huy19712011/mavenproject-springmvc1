@@ -18,16 +18,16 @@ public class Student {
 
     private String country;
 
-    private LinkedHashMap<String, String> countryOptions;
+//    private LinkedHashMap<String, String> countryOptions;
 
     public Student() {
         // populate country options
-        countryOptions = new LinkedHashMap<>();
-        countryOptions.put("BR", "Brazil");
-        countryOptions.put("FR", "France");
-        countryOptions.put("DE", "Germany");
-        countryOptions.put("IN", "India");
-        countryOptions.put("UK", "United Kingdom");
+//        countryOptions = new LinkedHashMap<>();
+//        countryOptions.put("BR", "Brazil");
+//        countryOptions.put("FR", "France");
+//        countryOptions.put("DE", "Germany");
+//        countryOptions.put("IN", "India");
+//        countryOptions.put("UK", "United Kingdom");
     }
 
     public String getFirstName() {
@@ -54,8 +54,8 @@ public class Student {
         this.country = country;
     }
 
-    public LinkedHashMap<String, String> getCountryOptions() {
-        return countryOptions;
-    }
+//    public LinkedHashMap<String, String> getCountryOptions() {
+//        return countryOptions;
+//    }
 
 }
