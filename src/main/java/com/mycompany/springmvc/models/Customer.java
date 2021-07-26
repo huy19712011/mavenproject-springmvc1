@@ -16,8 +16,8 @@ public class Customer {
 
     private String firstName;
 
-//    @NotNull(message = "is required")
-    @Size(min = 2, message = "Last Name must have minimum 2 characters!")
+    @NotNull(message = "is required")
+    @Size(min = 2, message = " >>> Last Name must have minimum 2 characters!")
     private String lastName;
 
     public String getFirstName() {
