@@ -5,6 +5,8 @@
  */
 package com.mycompany.springmvc.models;
 
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
@@ -20,6 +22,10 @@ public class Customer {
     @Size(min = 2, message = " >>> Last Name must have minimum 2 characters!")
     private String lastName;
 
+    @Min(value = 0, message = "must be greater or equal to {value}")
+    @Max(value = 10, message = "must be less or equal to {value}")
+    private int freePasses;
+
     public String getFirstName() {
         return firstName;
     }
@@ -34,6 +40,14 @@ public class Customer {
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
+    }
+
+    public int getFreePasses() {
+        return freePasses;
+    }
+
+    public void setFreePasses(int freePasses) {
+        this.freePasses = freePasses;
     }
 
 
