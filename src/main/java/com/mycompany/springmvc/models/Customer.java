@@ -8,6 +8,7 @@ package com.mycompany.springmvc.models;
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
 /**
@@ -25,6 +26,9 @@ public class Customer {
     @Min(value = 0, message = "must be greater or equal to {value}")
     @Max(value = 10, message = "must be less or equal to {value}")
     private int freePasses;
+
+    @Pattern(regexp = "^[a-zA-Z0-9]{5}", message = "only 5 chars/digits")
+    private String postalCode;
 
     public String getFirstName() {
         return firstName;
@@ -50,6 +54,13 @@ public class Customer {
         this.freePasses = freePasses;
     }
 
+    public String getPostalCode() {
+        return postalCode;
+    }
+
+    public void setPostalCode(String postalCode) {
+        this.postalCode = postalCode;
+    }
 
 
 }
