@@ -37,6 +37,11 @@
                 PHP <form:radiobutton path="favoriteLanguage" value="PHP"/>
                 Python <form:radiobutton path="favoriteLanguage" value="Python"/>
             <br><br>
+                Operating Systems:
+                Linux <form:checkbox path="operatingSystems" value="Linux" />
+                Mac OS <form:checkbox path="operatingSystems" value="Mac OS" />
+                Window <form:checkbox path="operatingSystems" value="Window" />
+            <br><br>
 
             <input type="submit" value="Submit"/>
         </form:form>
