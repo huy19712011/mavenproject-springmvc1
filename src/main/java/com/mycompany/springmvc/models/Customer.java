@@ -5,6 +5,7 @@
  */
 package com.mycompany.springmvc.models;
 
+import com.mycompany.springmvc.validation.CourseCode;
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
@@ -30,6 +31,11 @@ public class Customer {
 
     @Pattern(regexp = "^[a-zA-Z0-9]{5}", message = "only 5 chars/digits")
     private String postalCode;
+
+    //@CourseCode // using default values for value and message
+    //@CourseCode(value = "bkacad", message = "custom message") // custom both value, message
+    @CourseCode(value = "bkacad") // custom value, -> calculate message based on value
+    private String courseCode;
 
     public String getFirstName() {
         return firstName;
@@ -61,6 +67,14 @@ public class Customer {
 
     public void setPostalCode(String postalCode) {
         this.postalCode = postalCode;
+    }
+
+    public String getCourseCode() {
+        return courseCode;
+    }
+
+    public void setCourseCode(String courseCode) {
+        this.courseCode = courseCode;
     }
 
 
