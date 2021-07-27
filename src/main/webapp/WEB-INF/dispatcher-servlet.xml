@@ -32,6 +32,16 @@
     <!--for reading countries.properties file on WEB-INF/ folder-->
     <util:properties  id="countryOptions" location="classpath:../countries.properties" />
     <!--<util:properties  id="countryOptions" location="classpath:../views/countries.properties" />-->
+    
+    <!--custom message for validation (160 Tut1) - work on eclipse, not work on netbeans?-->
+    <!--ResourceBundleMessageSource not work on netbeans 12.4, but work on eclipse-->
+    <!--ReloadableResourceBundleMessageSource work on netbeans 12.4-->
+    <bean id="messageSource"
+    class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
+        <property name="basenames" value="classpath:../messages" />
+        <!--<property name="basenames" value="resources/messages" /> not work -->
+    </bean>
+    
 </beans>
 
 
